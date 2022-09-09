@@ -7,13 +7,13 @@ import plotly.graph_objects as go
 from pathlib import Path
 import base64
 import sys
-sys.path.insert(1, "../../data/SP500_predict/")
+#sys.path.insert(1, "./predict_stock_on_news/data/SP500_predict/")
 import data
 from data import df_main
 data = df_main()
 
 
-sys.path.insert(1, "../")
+#sys.path.insert(1, "../Tim")
 import model
 from model import data_processing
 from model import fit_model
@@ -24,7 +24,7 @@ from model import forecasting
 # import final
 # from final import create_dataframe
 
-data_nyt= pd.read_csv("../../NLP_news/dataset_NYTimes.csv")
+data_nyt= pd.read_csv("dt/dataset_NYTimes.csv")
 
 #data_nyt2= create_dataframe()
 
@@ -40,7 +40,7 @@ def img_to_bytes(img_path):
     return encoded
 
 header_html = "<img src='data:image/png;base64,{}' class='img-fluid'>".format(
-    img_to_bytes("VuYT.png")
+    img_to_bytes("dt/VuYT.png")
 )
 
 col1, col2, col3 = st.columns([1,2,20])

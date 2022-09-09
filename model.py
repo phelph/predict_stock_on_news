@@ -14,8 +14,8 @@ import plotly.graph_objects as go
 # pip install fbprophet
 
 
-from fbprophet import Prophet
-from fbprophet.plot import plot_plotly, plot_components_plotly
+from prophet import Prophet
+from prophet.plot import plot_plotly, plot_components_plotly
 from prophet.diagnostics import cross_validation
 from prophet.diagnostics import performance_metrics
 
@@ -23,7 +23,7 @@ from prophet.diagnostics import performance_metrics
 #### Import data from a function in another .py file (optional)
 
 import sys
-sys.path.insert(1, "../data/SP500_predict/")
+#sys.path.insert(1, "../data/SP500_predict/")
 import data
 from data import df_main
 data = df_main()
@@ -52,7 +52,7 @@ def fit_model(self):
     model = fbp.fit(self)
     return model
 
-# Test your model
+#Test your model
 def test_model(self, data):
     test = data[round(len(data)*0.8):]
     forecast = self.predict(test)

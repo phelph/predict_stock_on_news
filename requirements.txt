@@ -1,7 +1,9 @@
 
 numpy
 pandas
-
+streamlit
+scipy
+statsmodels
 # nltk
 # textblob
 # vaderSentiment
