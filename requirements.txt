@@ -12,8 +12,8 @@ pandas
 # tensorflow
 # tqdm
 plotly
-pystan==2.18.0.0
-fbprophet
+#pystan==2.18.0.0
+prophet
 
 # statsmodels
 pandas_datareader
