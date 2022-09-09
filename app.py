@@ -56,7 +56,7 @@ with col3:
 
 
 with st.sidebar:
-
+    st.image('dt/SP500-Logo-1.png')
     datum = st.date_input("Pick a date:", datetime.date(2020,7,6),
                       min_value= datetime.date(2019,7,6),
                       max_value=datetime.date(2022,10,2))
