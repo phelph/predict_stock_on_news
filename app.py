@@ -176,3 +176,13 @@ figu.update_layout(width=30, height=20)
 # fig = plot_forecast(m, f)
 # fig.update_layout(plot_bgcolor="rgba(255, 255, 255, 0.8)", paper_bgcolor="rgba(255, 255, 255, 0.8)")
 # st.plotly_chart(fig, use_container_width=True)
+
+#Expandable About bar
+expander_bar = st.expander("About")
+expander_bar.markdown("""
+This is a LeWagon Alumni **Data** **Science** Project about predicting the
+stock market based on news headlines and a time series.\n
+Made by [Laura](https://www.linkedin.com/in/laura-martel-133692159/),
+[Vu](https://www.linkedin.com/in/thang-vu-hong/) and
+[Philip](https://www.linkedin.com/in/philip-steffen-71b5b823a/).
+""")
